@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Lab5</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="flexbox.css">
+    </head>
+    <body onload = "getCookie()">
+        <div class ="flex_container1">
+            <div class="block1">
+                <h2 style="margin-right: 36%;">Start</h2>
+                <p>You are looking at page 1 with flexbox</p>
+            </div>
+            <div class="block2" onmouseout="setAlign(this)" onmouseup="list.setForm(this)">
+                <h1><strong>Menu</strong></h1>
+                <ol>
+                    <li>Page 1</li>
+                    <li>Page 2</li>
+                    <li>Page 3</li>
+                    <li>Page 4</li>
+                    <li>Page 5</li>
+                </ol>
+            </div>
+            <div class ="flex_container2">
+                <div class="block3">
+                    <ul class ="examples">
+                        <li>Flexbox</li>
+                        <li>Grid</li>
+                        <li>No flexbox and grid</li>
+                    </ul>
+                </div>
+                <div class="block5" onmouseout="setAlign(this)" onmouseup="list.setForm(this)">
+                    <p>Choose your meme</p>
+                    <img src="images\memes.jpg" alt="meme" width = "60%" height="50%">
+                    <form id="numberForm" onkeydown="ifenter(event)">
+                        <label for="number">Enter natural number:</label>
+                        <input type="number" id="number" name="number" min = 1>
+                        <button type="button" onclick="findMaxDigit()">Find maximum digit</button>
+                    </form>
+                </div>
+            </div>
+            <div class ="flex_container3">
+                <div class="block4" onmouseout="setAlign(this)" onmouseup="list.setForm(this)">
+                    <p>A meme is an idea, 
+                        behavior, or style that spreads by means of imitation from person to person within a culture and 
+                        often carries symbolic meaning representing a particular phenomenon or theme.</p>
+                </div>
+                <div class="block6">
+                    <p>How do you want to align contents?</p>
+                </div>
+            </div>
+            <div class="block1" style="text-align: right;">
+                <p>You are still looking at page 1 with flexbox</p>
+                <h2 style = "margin-left: 36%;">End</h2>
+            </div>
+        </div>
+        <script src = "script.js"></script>
+    </body>
+</html>
